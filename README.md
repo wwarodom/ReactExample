@@ -1,4 +1,4 @@
-### React Example
+### Resources
 
 1. React from strach (babel + webpack) : 
 [https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm](https://www.tutorialspoint.com/reactjs/reactjs_environment_setup.htm) 
