@@ -7,4 +7,4 @@
 2. ES2015 Syntax
 [https://www.babelcoder.com/blog/posts/introduction-to-es2015](https://www.babelcoder.com/blog/posts/introduction-to-es2015)
 
-3. [Several React code from Stephen Grider](https://github.com/StephenGrider)
+3. Several React code from: [Stephen Grider](https://github.com/StephenGrider)
