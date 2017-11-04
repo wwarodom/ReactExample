@@ -4,11 +4,14 @@ import Square from './Square';
 class Board extends Component {
 
     renderSquare(i) {
-        return <Square value={this.props.squares[i]} onClick={() => this.props.onClick(i)} />;
+        return (
+            <Square
+                value={this.props.squares[i]}
+                onClick={() => this.props.onClick(i)}
+            />
+        );
     }
     render() {
-
-        // const status = 'Next player: X';
         return (
             <div>
                 <div className="board-row">
