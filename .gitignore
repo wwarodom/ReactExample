@@ -11,7 +11,7 @@ bundle.js
 # production
 /build
 
-# misc
+# misc ignore
 .DS_Store
 .env.local
 .env.development.local
