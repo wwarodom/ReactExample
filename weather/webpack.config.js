@@ -3,8 +3,7 @@ module.exports = {
     './src/index.js'
   ],
   output: {
-    path: __dirname,
-    publicPath: '/',
+    path:'/',
     filename: 'bundle.js'
   },
   module: {
@@ -20,7 +19,9 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
   devServer: {
-    historyApiFallback: true,
-    contentBase: './'
+      contentBase: './',
+      inline: true,
+      hot: true,
+      port: 8080
   }
 };
