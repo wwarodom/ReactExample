@@ -1,0 +1,14 @@
+th,td {
+	vertical-align: middle !important;
+	text-align: left !important;
+}
+
+
+.input-group {
+	margin: 20px 0px;
+}
+
+svg {
+	height: 150px;
+}
+ 
