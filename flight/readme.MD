@@ -18,6 +18,7 @@ const config = {
 module.exports = config;
 ```
 
+* import flight.sql to mysql server
 * node /server/index.js   
 
 Run react:
