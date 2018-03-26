@@ -20,12 +20,12 @@ class BearAdd extends Component {
         e.preventDefault();
         this.props.addBear(
             this.state.name,
-            this.state.weight);
-            // ,
-            // (item) => {
-            //     console.log('item'  + item)
-            //     this.props.fetchBears();
-            // });
+            this.state.weight
+            ,
+            (item) => {
+                console.log('item'  + item)
+                this.props.fetchBears();
+            });
     }
 
     render() {

@@ -16,43 +16,37 @@ export function fetchBears() {
     };
 }
 
-export function addBear(name, weight) {
-    axios.post(ROOT_URL, {
+export function addBear(name, weight, callback) {
+    const request = axios.post(ROOT_URL, {
         name: name,
         weight: weight
-    }) ;
-    const request = axios.get(ROOT_URL);
-    return {
-        type: FETCH_BEARS,
-        payload: request
-    };
-    // return { type: ADD_BEAR, payload: null};
-    // fetchBears();
+    }).then((res) => callback(res));
+    return {type: ADD_BEAR, payload: request};
 }
 
-export function deleteBear(id,callback) {
-    const request =  axios.delete(`${ROOT_URL}/${id}`)
-        .then( (res) => callback(res));
+export function deleteBear(id, callback) {
+    const request = axios.delete(`${ROOT_URL}/${id}`)
+        .then((res) => callback(res));
     return {
         type: DELETE_BEAR,
         payload: request
     }
 }
 
-export function getBear(id,callback) {
+export function getBear(id, callback) {
     const request = axios.get(`${ROOT_URL}/${id}`)
-        // .then( (res) => callback(res) );
     return {
         type: GET_BEAR,
         payload: request
     };
 }
 
-export function updateBear(id,name,weight) {
-    const request = axios.put(`${ROOT_URL}/${id}`,  {
-            name: name,
-            weight: weight
-        });
+export function updateBear(id, name, weight,callback) {
+    const request = axios.put(`${ROOT_URL}/${id}`, {
+        name: name,
+        weight: weight
+    })
+        .then((res) => callback(res))
     return {
         type: UPDATE_BEAR,
         payload: request
