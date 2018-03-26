@@ -1,7 +1,9 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
 /node_modules
+bundle.js
+
+# IntelliJ
+*.iml
+/.idea
 
 # testing
 /coverage
@@ -9,7 +11,7 @@
 # production
 /build
 
-# misc
+# misc ignore
 .DS_Store
 .env.local
 .env.development.local
