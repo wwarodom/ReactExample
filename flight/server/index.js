@@ -10,7 +10,7 @@ var sequelize = new Sequelize(config.db_name,
 var express = require('express')
 var app = express()
 
-var cors = require('cors')
+var cors = require('cors') // for allow cross origins (request from different domain name)
 app.use(cors())
 
 const Flight = sequelize.define('flights', {
